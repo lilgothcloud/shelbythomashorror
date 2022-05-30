@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Это будет один из самых сложных вопросов</h1>
+    <h2>Если не сможешь решить - пока☺</h2>
+    <p id="demo"></p>
+    <style>
+        body{
+
+            display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(padik.jpg);
+  background-size: cover;
+        }
+    p {
+    font-weight: bold;
+    color: white;
+    }
+    button{
+        font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(85, 84, 84);
+  box-shadow: 0 -3px rgb(68, 68, 68) inset;
+  transition: 0.2s;
+  text-decoration: solid white;
+  color: white
+    }
+ h1{
+    padding: 20px;
+    color: white;
+text-shadow: gray 7px;
+font: bold;
+background-color: black;
+ }
+
+ h2 {
+     padding: 20px;
+    color: white
+    
+ }
+ img {
+
+bottom: 30px;
+     height: 190px;
+     width: 190px;
+margin: auto;
+padding-top: 100px;
+animation: pulse 10s infinite;
+}
+img:hover {
+	animation: none;
+    opacity: 0%;
+    transition-duration: 5s;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+        transform:scale(1.25, 1.25);
+        opacity: 20% ;
+	}
+
+    10%{
+        transform:scale(1.5,1.5);
+        transform: rotate(-45deg);
+
+    }
+    20% {
+        transform:scale(1.75, 1.75);
+        animation-duration: 5s;
+  
+    }
+	50% {
+		transform:scale(2, 2);
+
+	}
+	70% {
+		transform:scale(2.25, 2.25);
+        transform: rotate(45deg);
+	}
+    80%{
+        transform:scale(2.5, 2.5);
+
+    }
+    100%{
+		transform:scale(2.75, 2.75);
+    }
+}
+    </style>
+
+<button type="button" onclick="document.write(z)">Узнать ответ</button>
+<script>
+    alert('загадка от дяди пуджа');
+    var x, y, z
+    z=228;
+    document.getElementById('demo'). innerHTML='Сколько будет 2+2+8?' + " Сложно?"
+
+    function sayHi(phrase, who) {
+  alert( phrase + ', ' + who );
+}
+
+setTimeout(sayHi, 10000, "Вас нагнул дядя", "друг"); // Привет, Джон
+
+
+</script>
+
+<img class="pulse" src="tsh.jpg">
+
+</body>
+</html>
+
